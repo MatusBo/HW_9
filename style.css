@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "BasisGrotesquePro";
+  src: url(./fonts/BasisGrotesquePro-Bold.woff2) format("woff2"),
+    url(./fonts/BasisGrotesquePro-Bold.woff) format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "BasisGrotesquePro";
+  src: url(./fonts/BasisGrotesquePro-Light.woff2) format("woff2"),
+    url(./fonts/BasisGrotesquePro-Light.woff) format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "BasisGrotesquePro";
+  src: url(./fonts/BasisGrotesquePro-Regular.woff2) format("woff2"),
+    url(./fonts/BasisGrotesquePro-Regular.woff) format("woff");
+  font-weight: 400;
+}
+
+/*Загальні правила*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  max-width: 1440px;
+  font-family: "BasisGrotesquePro";
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -3%;
+  font-weight: 700;
+  color: black;
+}
+
+.container {
+  margin: auto;
+}
+
+.text_blue {
+  color: #0536fc;
+}
+
+.text_light {
+  font-weight: 300;
+  text-transform: none;
+  opacity: 60%;
+}
+
+.text_p {
+  font-weight: 400;
+  text-transform: none;
+  opacity: 60%;
+}
+
+.text_h2 {
+  font-size: 36px;
+  line-height: 40px;
+  margin: 3vw 0 5vw;
+}
+
+.button {
+  color: #ffff;
+  background-color: #0536fc;
+  opacity: 100%;
+  height: 4vw;
+  width: 15vw;
+  border: none;
+margin-top: 5vw;
+}
+
+/*ПІДТРИМКА*/
+.support,
+.contact {
+  padding: 10vw;
+}
+
+.questions__div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.questions {
+  width: 50%;
+  margin-left: 50%;
+}
+
+.questions__div h3 {
+  margin: 2vw 0 5vw;
+}
+
+.questions .text_p {
+  margin-bottom: 4vw;
+  width: 80%;
+}
+
+.minus {
+  font-size: 24px;
+  color: black;
+  margin: 2vw 0 5vw;
+}
+
+.plus {
+  font-size: 24px;
+  color: #0536fc;
+  margin: 2vw 0 5vw;
+}
+
+hr {
+  border: 1px solid;
+  opacity: 15%;
+}
+
+/*ПАРТНЕРИ*/
+
+.partners {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 25vw 32vw;
+}
+
+.title {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  padding: 0 10vw 3vw;
+}
+
+.title .text_light {
+  width: 30%;
+}
+
+.NiX {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  padding: 3vw;
+  border-bottom: 1px solid grey;
+}
+
+.western {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #0536fc;
+  color: #ffff;
+  position: relative;
+  padding: 3vw;
+  border-bottom: 1px solid grey;
+}
+
+.western .partners__name {
+  color:#ffff;
+}
+
+.western .text_light {
+  color: #ffff;
+}
+
+.arrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.DHL {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  padding: 3vw;
+  border-bottom: 1px solid grey;
+}
+
+.MacPaw {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+  padding: 3vw;
+  border-left: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.partners__logo {
+  height: 7vw;
+  display: grid;
+  align-items: center;
+}
+
+.partners__name {
+  margin: 2vw 0 4vw;
+}
+
+/*ЗВ'ЯЗОК*/
+
+.contact .text_p {
+  width: 30%;
+}
+
+.contact__div {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-template-rows: 10vw 10vw;
+ margin-top: 5vw;
+}
+
+.contact__input {
+  margin-top: 3vw;
+}
+
+.name {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+
+.name form [type="text"] {
+  border: none;
+  border-bottom: 1px solid grey;
+  width: 30vw;
+  padding-bottom: 1vh;
+  margin: 2vw 0 5vw;
+}
+
+.email form [type="email"] {
+  border: none;
+  border-bottom: 1px solid grey;
+  width: 30vw;
+  padding-bottom: 1vh;
+  margin: 2vw 0 5vw;
+}
+
+.message .text_light {
+  border: none;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  width: 30vw;
+  padding-bottom: 1vh;
+  margin: 2vw 0 5vw;
+}
+
+.message {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.email {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
